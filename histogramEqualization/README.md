@@ -23,4 +23,7 @@ tree:
 │   
 └── histogramEqualization.xcodeproj
 
+Reference:
+    http://www.programming-techniques.com/2013/01/histogram-equalization-using-c-image.html
+
 
