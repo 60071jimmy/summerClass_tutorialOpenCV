@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8FF47E41D41E8A000773D34 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8FF47E31D41E8A000773D34 /* main.cpp */; };
-		A8FF48221D4A313100773D34 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A8FF48211D4A313100773D34 /* README.md */; };
+		A8FF48301D4C456F00773D34 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8FF482F1D4C456F00773D34 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A8FF47DE1D41E8A000773D34 /* CopyFiles */ = {
+		A8FF482A1D4C456F00773D34 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A8FF47E01D41E8A000773D34 /* histogramEqualization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = histogramEqualization; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8FF47E31D41E8A000773D34 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A8FF48211D4A313100773D34 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8FF482C1D4C456F00773D34 /* tutorialC++-Armstrong_number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tutorialC++-Armstrong_number"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FF482F1D4C456F00773D34 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A8FF47DD1D41E8A000773D34 /* Frameworks */ = {
+		A8FF48291D4C456F00773D34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,96 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A8FF47D71D41E8A000773D34 = {
+		A8FF48231D4C456F00773D34 = {
 			isa = PBXGroup;
 			children = (
-				A8FF47E21D41E8A000773D34 /* histogramEqualization */,
-				A8FF47E11D41E8A000773D34 /* Products */,
-				A8FF48211D4A313100773D34 /* README.md */,
+				A8FF482E1D4C456F00773D34 /* tutorialC++-Armstrong_number */,
+				A8FF482D1D4C456F00773D34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A8FF47E11D41E8A000773D34 /* Products */ = {
+		A8FF482D1D4C456F00773D34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8FF47E01D41E8A000773D34 /* histogramEqualization */,
+				A8FF482C1D4C456F00773D34 /* tutorialC++-Armstrong_number */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A8FF47E21D41E8A000773D34 /* histogramEqualization */ = {
+		A8FF482E1D4C456F00773D34 /* tutorialC++-Armstrong_number */ = {
 			isa = PBXGroup;
 			children = (
-				A8FF47E31D41E8A000773D34 /* main.cpp */,
+				A8FF482F1D4C456F00773D34 /* main.cpp */,
 			);
-			path = histogramEqualization;
+			path = "tutorialC++-Armstrong_number";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A8FF47DF1D41E8A000773D34 /* histogramEqualization */ = {
+		A8FF482B1D4C456F00773D34 /* tutorialC++-Armstrong_number */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8FF47E71D41E8A000773D34 /* Build configuration list for PBXNativeTarget "histogramEqualization" */;
+			buildConfigurationList = A8FF48331D4C456F00773D34 /* Build configuration list for PBXNativeTarget "tutorialC++-Armstrong_number" */;
 			buildPhases = (
-				A8FF47DC1D41E8A000773D34 /* Sources */,
-				A8FF47DD1D41E8A000773D34 /* Frameworks */,
-				A8FF47DE1D41E8A000773D34 /* CopyFiles */,
+				A8FF48281D4C456F00773D34 /* Sources */,
+				A8FF48291D4C456F00773D34 /* Frameworks */,
+				A8FF482A1D4C456F00773D34 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = histogramEqualization;
-			productName = histogramEqualization;
-			productReference = A8FF47E01D41E8A000773D34 /* histogramEqualization */;
+			name = "tutorialC++-Armstrong_number";
+			productName = "tutorialC++-Armstrong_number";
+			productReference = A8FF482C1D4C456F00773D34 /* tutorialC++-Armstrong_number */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A8FF47D81D41E8A000773D34 /* Project object */ = {
+		A8FF48241D4C456F00773D34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = WeiTingChen;
 				TargetAttributes = {
-					A8FF47DF1D41E8A000773D34 = {
+					A8FF482B1D4C456F00773D34 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = A8FF47DB1D41E8A000773D34 /* Build configuration list for PBXProject "histogramEqualization" */;
+			buildConfigurationList = A8FF48271D4C456F00773D34 /* Build configuration list for PBXProject "tutorialC++-Armstrong_number" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A8FF47D71D41E8A000773D34;
-			productRefGroup = A8FF47E11D41E8A000773D34 /* Products */;
+			mainGroup = A8FF48231D4C456F00773D34;
+			productRefGroup = A8FF482D1D4C456F00773D34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8FF47DF1D41E8A000773D34 /* histogramEqualization */,
+				A8FF482B1D4C456F00773D34 /* tutorialC++-Armstrong_number */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A8FF47DC1D41E8A000773D34 /* Sources */ = {
+		A8FF48281D4C456F00773D34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FF48221D4A313100773D34 /* README.md in Sources */,
-				A8FF47E41D41E8A000773D34 /* main.cpp in Sources */,
+				A8FF48301D4C456F00773D34 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A8FF47E51D41E8A000773D34 /* Debug */ = {
+		A8FF48311D4C456F00773D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -172,7 +168,7 @@
 			};
 			name = Debug;
 		};
-		A8FF47E61D41E8A000773D34 /* Release */ = {
+		A8FF48321D4C456F00773D34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,70 +204,16 @@
 			};
 			name = Release;
 		};
-		A8FF47E81D41E8A000773D34 /* Debug */ = {
+		A8FF48341D4C456F00773D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
-					"-lopencv_shape",
-					"-lopencv_stitching",
-					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
-					"-lopencv_videostab",
-					"-lopencv_core",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A8FF47E91D41E8A000773D34 /* Release */ = {
+		A8FF48351D4C456F00773D34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
-					"-lopencv_shape",
-					"-lopencv_stitching",
-					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
-					"-lopencv_videostab",
-					"-lopencv_core",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -279,25 +221,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A8FF47DB1D41E8A000773D34 /* Build configuration list for PBXProject "histogramEqualization" */ = {
+		A8FF48271D4C456F00773D34 /* Build configuration list for PBXProject "tutorialC++-Armstrong_number" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8FF47E51D41E8A000773D34 /* Debug */,
-				A8FF47E61D41E8A000773D34 /* Release */,
+				A8FF48311D4C456F00773D34 /* Debug */,
+				A8FF48321D4C456F00773D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8FF47E71D41E8A000773D34 /* Build configuration list for PBXNativeTarget "histogramEqualization" */ = {
+		A8FF48331D4C456F00773D34 /* Build configuration list for PBXNativeTarget "tutorialC++-Armstrong_number" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8FF47E81D41E8A000773D34 /* Debug */,
-				A8FF47E91D41E8A000773D34 /* Release */,
+				A8FF48341D4C456F00773D34 /* Debug */,
+				A8FF48351D4C456F00773D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A8FF47D81D41E8A000773D34 /* Project object */;
+	rootObject = A8FF48241D4C456F00773D34 /* Project object */;
 }

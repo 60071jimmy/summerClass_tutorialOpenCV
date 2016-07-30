@@ -106,12 +106,12 @@ int main()
     float PrRk[256];
     for(int i = 0; i < 256; i++)
     {
-        PrRk[i] = (double)histogram[i] / size;
+        PrRk[i] = (double)histogram[i] / size;  //PDF(機率密度函數)
     }
     
     // Generate cumulative frequency histogram
     int cumhistogram[256];
-    cumhist(histogram,cumhistogram );
+    cumhist(histogram, cumhistogram);   //此副程式傳位址
     
     // Scale the histogram
     int Sk[256];
