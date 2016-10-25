@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A8FF47E41D41E8A000773D34 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8FF47E31D41E8A000773D34 /* main.cpp */; };
-		A8FF48221D4A313100773D34 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A8FF48211D4A313100773D34 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,7 +120,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FF48221D4A313100773D34 /* README.md in Sources */,
 				A8FF47E41D41E8A000773D34 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,9 +163,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -202,8 +220,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -211,31 +249,24 @@
 		A8FF47E81D41E8A000773D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
 					"-lopencv_shape",
 					"-lopencv_stitching",
+					"-lopencv_objdetect",
 					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
 					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
 					"-lopencv_core",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -245,31 +276,24 @@
 		A8FF47E91D41E8A000773D34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
 					"-lopencv_shape",
 					"-lopencv_stitching",
+					"-lopencv_objdetect",
 					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
 					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
 					"-lopencv_core",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

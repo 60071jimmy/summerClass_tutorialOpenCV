@@ -66,16 +66,18 @@ void histDisplay(int histogram[], const char* name)
     }
     
     // normalize the histogram between 0 and histImage.rows
-    
     for(int i = 0; i < 256; i++){
-        hist[i] = ((double)hist[i]/max)*histImage.rows;
+        hist[i] = ((double)hist[i]/max)*histImage.rows; // histImage.rows: hist_h
     }
     
     
     // draw the intensity line for histogram
     for(int i = 0; i < 256; i++)
     {
-        line(histImage, Point(bin_w*(i), hist_h),
+        line(histImage,
+             // First point of the line segment.
+             Point(bin_w*(i), hist_h),
+             // Second point of the line segment.
              Point(bin_w*(i), hist_h - hist[i]),
              Scalar(0,0,0), 1, 8, 0);
     }
@@ -92,7 +94,7 @@ void histDisplay(int histogram[], const char* name)
 int main()
 {
     // Load the image
-    Mat image = imread("../../data/home.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread("../../data/Unequalized_Hawkes_Bay_NZ.jpg", CV_LOAD_IMAGE_GRAYSCALE);
     
     // Generate the histogram
     int histogram[256];
@@ -106,18 +108,20 @@ int main()
     float PrRk[256];
     for(int i = 0; i < 256; i++)
     {
-        PrRk[i] = (double)histogram[i] / size;  //PDF(機率密度函數)
+        PrRk[i] = (double)histogram[i] / size;
+        // PrRk: PDF(機率密度函數)
     }
     
     // Generate cumulative frequency histogram
-    int cumhistogram[256];
-    cumhist(histogram, cumhistogram);   //此副程式傳位址
+    int cumhistogram[256]; //
+    cumhist(histogram, cumhistogram);
     
     // Scale the histogram
     int Sk[256];
     for(int i = 0; i < 256; i++)
     {
         Sk[i] = cvRound((double)cumhistogram[i] * alpha);
+        // Sk: CDF四捨五入後的結果
     }
     
     
@@ -131,11 +135,12 @@ int main()
     for(int i = 0; i < 256; i++)
     {
         PsSk[Sk[i]] += PrRk[i];
+        // PsSk: 將原本的灰階值對應到新的灰階值。Equlized
     }
     
     int final[256];
     for(int i = 0; i < 256; i++)
-        final[i] = cvRound(PsSk[i]*255);
+        final[i] = cvRound(PsSk[i]*255.0*255.0);
     
     
     // Generate the equlized image
